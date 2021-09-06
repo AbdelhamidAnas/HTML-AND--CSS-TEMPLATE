@@ -1,0 +1,188 @@
+/* Start Variables */
+:root{
+    --main-color: #296cb4 ;
+    --black-color:#141414 ;
+    --secondary-color: #ccc;
+    --thirdly-color: white;
+    --section-padding: 100px;
+}
+/* End Variables */
+/*Start Global Rules*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Small*/
+
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* Meduim*/
+@media (min-width: 992px ) {
+    .container{
+        width: 970px;
+    }
+}
+/* Large */ 
+@media (min-width: 1200px ) {
+    .container{
+        width: 1170px;
+    }
+}
+/*End Global Rules*/
+/* Start sign in */
+.sign{
+    min-height: 100vh;
+    background-image: url("../images/login2.png");
+    background-size: cover;
+    position: relative;
+}
+.sign .container .center{
+    width: 400px;
+    height: 90vh;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sign .container .center .text{
+    min-height: 40px;
+    background-color: #141414;
+}
+.sign .container .center .text h2{
+    font-size: 30px;
+    font-weight: normal;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+.sign .container .center .logo{
+    min-height: 90px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+}
+.sign .container .center .logo .image{
+    width: 90px;
+    margin-left: 60px;
+}
+.sign .container .center .logo .image img{
+    height: 70px;
+}
+.sign .container .center .logo .info-text h2{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+.transparent{
+    height: 20px;
+    background-color: transparent;
+}
+.form{
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+.form .forma .info {
+    padding: 0 10px;
+    margin: 0 20px;
+}
+.form .forma .info p{
+    line-height: 1.6;
+}
+.form .forma .info span{
+    color: var(--main-color);
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form form input[type="email"]{
+    width: 300px;
+    height: 36px;
+    margin: 30px 0;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.form form input[type="submit"]{
+    width: 300px;
+    height: 36px;
+    padding: 0 25px;
+    background-color: #3e66d5;
+    outline: none;
+    border: none;
+    color: white;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.form form input[type="submit"]:hover{
+    background-color: blue;
+}
+.form form a{
+    text-decoration: none;
+    margin-left: -135px;
+    color: var(--main-color);
+
+}
+.form form input[type="button"]{
+    width: 300px;
+    height: 36px;
+    padding: 0 25px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    color: black;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}
+.form footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(90px - 20px);
+}
+.form footer a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+}
+.form footer a:hover{
+    color: var(--main-color);
+}
+
+
+
+
+
+/* End Sign In */
